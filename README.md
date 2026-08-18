@@ -1,38 +1,49 @@
 <div align="center">
 
-# Análise Transcriptômica em Silico
-### Modulação da Neuroplasticidade e Neuroinflamação por Psilocibina na Depressão Maior
+# Análise Transcriptômica em Silico: Fenótipos de Vigilância
+### Identificação e Caracterização de Variantes de Expressão Gênica
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)
-![Bioinformatics](https://img.shields.io/badge/Bioinformatics-RNA--Seq-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+![Bioinformatics](https://img.shields.io/badge/Bioinformatics-Transcriptomics-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Published-success?style=for-the-badge)
 
 ---
 
 </div>
 
 ## Visão Geral do Projeto
-Este projeto apresenta um pipeline de bioinformática voltado à análise de expressão gênica diferencial (RNA-Seq/Microarray) em tecido cerebral. O objetivo é comparar o perfil molecular entre estados de **Controle**, **Depressão Maior** e **Pós-Tratamento com Psilocibina**.
+Este projeto apresenta um estudo bioinformático focado na caracterização de perfis transcriptômicos associados a fenótipos de vigilância. A análise foi conduzida em duas etapas complementares, contemplando desde o processamento primário dos dados de expressão até a identificação e validação de variantes de expressão gênica.
 
 ---
 
-## Visualização dos Resultados (Clustermap)
+## Resultados e Visualizações
 
-> Agrupamento hierárquico (*Hierarchical Clustering*) demonstrando a normalização por Z-Score dos 25 genes mais variáveis e a separação dos perfis fenotípicos.
+### Parte 1: Análise Primária e Perfil de Expressão
+> Processamento inicial dos dados transcriptômicos e agrupamento dos perfis de expressão fenotípica.
 
 <div align="center">
 
-![Heatmap Hierárquico](<imagem projeto 2.png>)
+![Gráfico Parte 1](grafico_parte1.png)
 
 </div>
 
 ---
 
-## Principais Achados Biológicos
+### Parte 2: Identificação de Genes e Variantes
+> Identificação detalhada dos alvos gênicos e mapeamento das variantes de expressão associadas ao estado de vigilância.
 
-* **Plasticidade Sináptica ($\text{Log}_2\text{FC} = +5.04$):** Forte ativação de marcadores de remodelação neural (*BDNF*, *ARC*).
-* **Supressão da Neuroinflamação ($\text{Log}_2\text{FC} = -4.16$):** Atenuamento expressivo de citocinas pró-inflamatórias (*IL6*, *TNF*).
-* **Via Serotoninérgica ($\text{Log}_2\text{FC} = +1.63$):** Modulação positiva de receptores específicos (*HTR2A*).
+<div align="center">
+
+![Gráfico Parte 2](grafico_parte2.png)
+
+</div>
+
+---
+
+## Estrutura do Repositório
+
+* **`Publicadaparte1.ipynb`:** Pipeline contendo o processamento inicial de dados, filtragem e geração do perfil de expressão aprovado e publicado.
+* **`Parte2.ipynb`:** Etapa de identificação detalhada dos genes candidatos e análise avançada de variantes.
 
 ---
 
@@ -41,6 +52,6 @@ Este projeto apresenta um pipeline de bioinformática voltado à análise de exp
 | Categoria | Tecnologias / Bibliotecas |
 | :--- | :--- |
 | **Linguagem** | Python 3 |
-| **Análise Estatística** | `Pandas`, `NumPy`, `SciPy` |
-| **Visualização Científica** | `Seaborn` (`clustermap`), `Matplotlib` |
-| **Plataforma** | Google Colab / GitHub |
+| **Processamento de Dados** | `Pandas`, `NumPy`, `SciPy` |
+| **Visualização Científica** | `Seaborn`, `Matplotlib` |
+| **Ambiente de Execução** | Google Colab |
