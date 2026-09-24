@@ -1,57 +1,19 @@
-<div align="center">
+# Análises Transcriptômicas: Fenótipos de Vigilância
 
-# Análise Transcriptômica em Silico: Fenótipos de Vigilância
-### Identificação e Caracterização de Variantes de Expressão Gênica
+[![Publicado](https://img.shields.io/badge/Publicado-VII%20CONBRACIB-brightgreen)](https://share.google/hdVC48A4HWLJAFMR5)
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)
-![Bioinformatics](https://img.shields.io/badge/Bioinformatics-Transcriptomics-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Published-success?style=for-the-badge)
+## Visão Geral
+Estudo *in silico* focado em investigar a possível relação entre o transtorno de ansiedade generalizada e a modulação positiva da resposta imunológica, utilizando mineração de bases de dados oficiais[span_4](start_span)[span_4](end_span). Trabalho apresentado e publicado no **VII Congresso Brasileiro de Ciências Biológicas (CONBRACIB)**.
 
----
+* **Artigo / Resumo Publicado:** [Acesse a publicação (DOI)](https://share.google/hdVC48A4HWLJAFMR5)
+* **Dataset de Origem (NCBI GEO):** [GSE10718](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE10718)[span_5](start_span)[span_5](end_span)[span_6](start_span)[span_6](end_span)
+* **Script de Execução (Google Colab):** [Acessar Notebook](https://colab.research.google.com/drive/1WRV3AXgwpFj7yvNIHXuicBsfyC05hS4)[span_7](start_span)[span_7](end_span)
 
-</div>
-
-## Visão Geral do Projeto
-Este projeto apresenta um estudo bioinformático focado na caracterização de perfis transcriptômicos associados a fenótipos de vigilância. A análise foi conduzida em duas etapas complementares, contemplando desde o processamento primário dos dados de expressão até a identificação e validação de variantes de expressão gênica.
-
----
+##  Metodologia e Pipeline
+* **Ferramentas e Bibliotecas:** Python executado no Google Colab utilizando `GEOParse` para captura dos dados, além de `Pandas`, `Seaborn` e `Matplotlib` para estruturação e visualização estatística[span_8](start_span)[span_8](end_span)[span_9](start_span)[span_9](end_span).
+* **Análise Populacional:** Rastreamento de 100 amostras ($n=100$) para o cálculo da média de expressão genômica global[span_10](start_span)[span_10](end_span).
 
 ## Resultados e Visualizações
+Abaixo está representada a assinatura genômica global obtida através da matriz de expressão diferencial[span_11](start_span)[span_11](end_span):
 
-### Parte 1: Análise Primária e Perfil de Expressão
-> Processamento inicial dos dados transcriptômicos e agrupamento dos perfis de expressão fenotípica.
-
-<div align="center">
-
-![Gráfico Parte 1](grafico_parte1.png)
-
-</div>
-
----
-
-### Parte 2: Identificação de Genes e Variantes
-> Identificação detalhada dos alvos gênicos e mapeamento das variantes de expressão associadas ao estado de vigilância.
-
-<div align="center">
-
-![Gráfico Parte 2](grafico_parte2.png)
-
-</div>
-
----
-
-## Estrutura do Repositório
-
-* **`Publicadaparte1.ipynb`:** Pipeline contendo o processamento inicial de dados, filtragem e geração do perfil de expressão aprovado e publicado.
-* **`Parte2.ipynb`:** Etapa de identificação detalhada dos genes candidatos e análise avançada de variantes.
-
----
-
-## Tecnologias Utilizadas
-
-| Categoria | Tecnologias / Bibliotecas |
-| :--- | :--- |
-| **Linguagem** | Python 3 |
-| **Processamento de Dados** | `Pandas`, `NumPy`, `SciPy` |
-| **Visualização Científica** | `Seaborn`, `Matplotlib` |
-| **Ambiente de Execução** | Google Colab |
+![Assinatura Genômica Global](projeto1grafico1.png)[span_12](start_span)[span_12](end_span)[span_13](start_span)[span_13](end_span)
